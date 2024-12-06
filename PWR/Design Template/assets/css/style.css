@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+:root{
+    --site-body-color: #F9F9FA;
+    --site-bg-primary-color: #4A0A8A;
+    --site-bg-secondary-color: #021526;
+    --site-text-color-white: #FFFFFF;
+    --site-text-color-dark: #021526;
+    --site-text-color-light: #EBEAFF;
+    --site-border-color-light: #C8D5DD;
+}
+body{
+    font-family: "Hind Siliguri", sans-serif!important;
+    font-weight: 400;
+    background-color: red;
+}
+.font-light {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-regular {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-medium {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-semibold {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.font-bold {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
