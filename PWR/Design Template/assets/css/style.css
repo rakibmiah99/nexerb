@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Tiro+Bangla:ital@0;1&display=swap');
+/*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");*/
 :root{
     --site-body-color: #F9F9FA;
     --site-bg-primary-color: #4A0A8A;
+    --site-bg-primary-color-hover: #230B66;
     --site-bg-secondary-color: #021526;
-    --site-text-color-white: #FFFFFF;
+    --site-text-color-light: #FFFFFF;
     --site-text-color-dark: #021526;
-    --site-text-color-light: #EBEAFF;
-    --site-border-color-light: #C8D5DD;
+    /*--site-text-color-light: #EBEAFF;*/
+    --site-border-color-light: rgba(200, 213, 221, 0.65);
 }
 body{
     font-family: "Hind Siliguri", sans-serif!important;
     font-weight: 400;
-    background-color: red;
+    background-color: var(--site-body-color);
 }
+
+
+.tiro-bangla-regular {
+    font-family: "Tiro Bangla", serif!important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tiro-bangla-regular-italic {
+    font-family: "Tiro Bangla", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
 .font-light {
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 300;
@@ -41,4 +59,156 @@ body{
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.btn-brand{
+    background-color: var(--site-bg-primary-color);
+    color: var(--site-text-color-light);
+}
+
+.btn-brand:hover{
+    background-color: var(--site-bg-primary-color-hover);
+    color: var(--site-text-color-light);
+}
+
+.btn-brand-secondary{
+    background-color: var(--site-bg-secondary-color);
+    color: var(--site-text-color-light);
+}
+
+.btn-brand-secondary:hover{
+    background-color: var(--site-bg-primary-color-hover);
+    color: var(--site-text-color-light);
+}
+
+.btn-light{
+    background-color: var(--site-border-color-light);
+    font-weight: 500;
+}
+
+.btn-light:hover{
+    background-color: var(--site-border-color-light);
+    font-weight: 500;
+}
+
+#navbar{
+    background-color: var(--site-text-color-light);
+}
+
+.navbar-brand{
+    color: var(--site-bg-primary-color)!important;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-link{
+    padding: 8px 10px!important;
+    font-size: 18px;
+    font-weight: 500!important;
+    color: var(--site-text-color-dark)!important;
+    text-underline-offset: 10px!important;
+    text-decoration-thickness: 3px!important;
+}
+
+.nav-link:hover{
+    color: var(--site-bg-primary-color)!important;
+    text-decoration: underline;
+}
+
+.banner-search-box{
+    background-color: rgba(74, 10, 138, 0.1);
+    width: 100%;
+    padding: 40px 100px;
+}
+
+
+.banner-search-box-area{
+    height: 150px;
+    width: 100%;
+}
+
+.courses .course-title{
+    padding: 0 0 10px 0;
+    /*border-bottom: 1px solid var(--site-border-color-light);*/
+}
+
+.course-info-icon-text{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--site-border-color-light);
+    margin-bottom: 10px;
+}
+.course-info-icon-text div{
+    margin-right: 10px;
+
+}
+
+#footer{
+    padding: 30px 10px;
+    background-color: var(--site-bg-secondary-color);
+    color: var(--site-text-color-light);
+}
+
+#footer .nav-link{
+    color: var(--site-text-color-light)!important;
+}
+
+/*COURSE DETAILS PAGE CSS*/
+.course-details .course-topics{
+    background-color: var(--site-text-color-light);
+    border: 1px solid var(--site-border-color-light);
+}
+
+.course-details .course-topic-title{
+    padding: 10px 10px;
+    background-color: var(--site-bg-primary-color);
+    color: var(--site-text-color-light);
+    border-radius: 6px;
+    text-align: center;
+}
+.course-guide-line-links{
+    border: 1px solid var(--site-border-color-light);
+}
+.course-details .course-topic-guideline-title{
+    padding: 10px 10px;
+    background-color: var(--site-bg-secondary-color);
+    color: var(--site-text-color-light);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.course-guide-line-links .nav-link{
+    padding-left: 2px!important;
+    font-size: 16px;
+    text-decoration-thickness: 1px!important;
+}
+
+.course-details .description-area{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid var(--site-border-color-light);
+}
+.description-area p, span, a{
+    font-family: "Tiro Bangla", serif!important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.prev-next{
+    background-color: var(--site-text-color-light);
+    border: 1px solid var(--site-border-color-light);
+}
+
+/*COMING SOON PAGE CSS*/
+.coming-soon{
+    padding: 100px 30px;
+    text-align: center;
+    background-color: var(--site-text-color-light);
+}
+
+.coming-soon-area i{
+    font-size: 100px;
+}
+
+.coming-soon-area *{
+    margin-top: 1px;
 }

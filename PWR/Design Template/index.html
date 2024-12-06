@@ -1,18 +1,18 @@
 <html lang="en">
     <head>
         <title>Nexerb Academy</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
         <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href="assets/vendors/animate.min.css" rel="stylesheet">
-        <link href="assets/css/style.css">
+        <link href="assets/vendors/plyr/plyr.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
         <script src="assets/vendors/bootstrap/bootstrap.min.js"></script>
         <script src="assets/vendors/jquery.min.js"></script>
+        <script src="assets/vendors/plyr/plyr.js"></script>
         <script src="assets/js/common.js"></script>
     </head>
     <body>
-            <nav class="bg-dark">
+            <nav id="navbar" class="shadow">
                 <div class="container navbar navbar-expand-sm navbar-dark ">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="javascript:void(0)">Nexerb Acadamy</a>
@@ -42,15 +42,268 @@
                                         <a class="nav-link" href="javascript:void(0)">লগ ইন</a>
                                     </li>
                                 </ul>
-                                <form class="d-flex mb-0">
+                                <!--<form class="d-flex mb-0">
                                     <input class="form-control me-2" type="text" placeholder="Search">
                                     <button class="btn btn-primary" type="button">Search</button>
-                                </form>
+                                </form>-->
+                                <a href="#" class="btn btn-brand">জয়েন প্রিমিয়াম</a>
                             </div>
 
                         </div>
                     </div>
                 </div>
             </nav>
+
+            <div class="banner-search-box">
+                <div class="container">
+                    <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <div class="d-flex flex-column  align-items-center justify-content-center banner-search-box-area" >
+                            <input class="form-control w-100 text-center search-box" placeholder="যেকোন কিছু সার্চ করুনঃ লারাভেল গাইডলাইন, কোডিং প্যাটার্ন, ফ্রি রিসোর্স, সার্ভিসিং, নোড জে এস রোডম্যাপ ইত্যাদি">
+                            <button class="btn mt-2 btn-brand-secondary">সার্চ করুন</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses mt-3">
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card" style="width:400px">
+                                    <img class="card-img-top" src="https://laraveldaily.com/storage/841/conversions/900-600-laravel-(29)-front_large.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title course-title">লারাভেল ইলেভেন স্টাকচার প্রজেক্ট </h4>
+                                        <div class="d-flex align-content-center course-info-icon-text">
+                                            <div>
+                                                <i class="bi bi-play-btn me-1"></i>
+                                                <span> ২৪ টি ভিডিও</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-book me-1"></i>
+                                                <span>  ২.৫ হাজার ওয়ার্ড</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-calendar me-1"></i>
+                                                <span>  ২৪ মার্চ, ২০২৪</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn w-100 btn-light">
+                                           <span> বিস্তারিত দেখুন </span>
+                                            <i class="bi bi-arrow-right ms-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card" style="width:400px">
+                                    <img class="card-img-top" src="https://laraveldaily.com/storage/841/conversions/900-600-laravel-(29)-front_large.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title course-title">লারাভেল ইলেভেন স্টাকচার প্রজেক্ট </h4>
+                                        <div class="d-flex align-content-center course-info-icon-text">
+                                            <div>
+                                                <i class="bi bi-play-btn me-1"></i>
+                                                <span> ২৪ টি ভিডিও</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-book me-1"></i>
+                                                <span>  ২.৫ হাজার ওয়ার্ড</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-calendar me-1"></i>
+                                                <span>  ২৪ মার্চ, ২০২৪</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn w-100 btn-light">
+                                            <span> বিস্তারিত দেখুন </span>
+                                            <i class="bi bi-arrow-right ms-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card" style="width:400px">
+                                    <img class="card-img-top" src="https://laraveldaily.com/storage/841/conversions/900-600-laravel-(29)-front_large.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title course-title">লারাভেল ইলেভেন স্টাকচার প্রজেক্ট </h4>
+                                        <div class="d-flex align-content-center course-info-icon-text">
+                                            <div>
+                                                <i class="bi bi-play-btn me-1"></i>
+                                                <span> ২৪ টি ভিডিও</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-book me-1"></i>
+                                                <span>  ২.৫ হাজার ওয়ার্ড</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-calendar me-1"></i>
+                                                <span>  ২৪ মার্চ, ২০২৪</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn w-100 btn-light">
+                                            <span> বিস্তারিত দেখুন </span>
+                                            <i class="bi bi-arrow-right ms-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card" style="width:400px">
+                                    <img class="card-img-top" src="https://laraveldaily.com/storage/841/conversions/900-600-laravel-(29)-front_large.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title course-title">লারাভেল ইলেভেন স্টাকচার প্রজেক্ট </h4>
+                                        <div class="d-flex align-content-center course-info-icon-text">
+                                            <div>
+                                                <i class="bi bi-play-btn me-1"></i>
+                                                <span> ২৪ টি ভিডিও</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-book me-1"></i>
+                                                <span>  ২.৫ হাজার ওয়ার্ড</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-calendar me-1"></i>
+                                                <span>  ২৪ মার্চ, ২০২৪</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn w-100 btn-light">
+                                            <span> বিস্তারিত দেখুন </span>
+                                            <i class="bi bi-arrow-right ms-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card" style="width:400px">
+                                    <img class="card-img-top" src="https://laraveldaily.com/storage/841/conversions/900-600-laravel-(29)-front_large.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title course-title">লারাভেল ইলেভেন স্টাকচার প্রজেক্ট </h4>
+                                        <div class="d-flex align-content-center course-info-icon-text">
+                                            <div>
+                                                <i class="bi bi-play-btn me-1"></i>
+                                                <span> ২৪ টি ভিডিও</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-book me-1"></i>
+                                                <span>  ২.৫ হাজার ওয়ার্ড</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-calendar me-1"></i>
+                                                <span>  ২৪ মার্চ, ২০২৪</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn w-100 btn-light">
+                                            <span> বিস্তারিত দেখুন </span>
+                                            <i class="bi bi-arrow-right ms-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card" style="width:400px">
+                                    <img class="card-img-top" src="https://laraveldaily.com/storage/841/conversions/900-600-laravel-(29)-front_large.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title course-title">লারাভেল ইলেভেন স্টাকচার প্রজেক্ট </h4>
+                                        <div class="d-flex align-content-center course-info-icon-text">
+                                            <div>
+                                                <i class="bi bi-play-btn me-1"></i>
+                                                <span> ২৪ টি ভিডিও</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-book me-1"></i>
+                                                <span>  ২.৫ হাজার ওয়ার্ড</span>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-calendar me-1"></i>
+                                                <span>  ২৪ মার্চ, ২০২৪</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn w-100 btn-light">
+                                            <span> বিস্তারিত দেখুন </span>
+                                            <i class="bi bi-arrow-right ms-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="mt-3">
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5 p-3 info">
+                                <h1 class="brand-logo">Nexerb Acadamy</h1>
+                                <p>
+                                    আমাদের মিশন: মানুষকে বিনামূল্যে কোড শেখাতে সাহায্য করা। আমরা এটি অর্জন করি হাজার হাজার ভিডিও, প্রবন্ধ এবং ইন্টারেক্টিভ কোডিং পাঠ তৈরি করে - যা সবার জন্য সম্পূর্ণ বিনামূল্যে উন্মুক্ত।
+                                    freeCodeCamp-এ অনুদান আমাদের শিক্ষামূলক কার্যক্রমে সাহায্য করে এবং সার্ভার, সেবা এবং কর্মীদের খরচ মেটাতে সহায়তা করে।
+                                </p>
+                                <button class="btn mt-2 btn-primary me-2">
+                                    <i class="bi bi-facebook me-1"></i>
+                                    <span>জয়েন ফেসফুক গ্রুপ</span>
+                                </button>
+                                <button class="btn mt-2 btn-danger">
+                                    <i class="bi bi-youtube me-1"></i>
+                                    <span>সাবস্ক্রাইব ইউটিউব চ্যানেল </span>
+                                </button>
+                            </div>
+                            <div class="col-md-3 p-3 links">
+                                <div class="links">
+                                    <h3 class="ms-2">লিঙ্ক</h3>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">প্রাইভেসি পলিসি</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">টার্মস অ্যান্ড কন্ডিশন</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">কপিরাইট পলিসি</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">কোড অফ কন্ডাক্ট</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">সাপোর্ট</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">আমাদের সম্পর্কে</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-3 trending-links">
+                                <div class="links">
+                                    <h3 class="ms-2">ট্রেন্ডিং লিঙ্ক</h3>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">প্রোগ্রামিং কি কেন কিভাবে ? </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">ক্লিন কোড কিভাবে লিখবেন ? </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">কমান্ডলাইন ফর বিগিনারস</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">কফ্রন্ট-এন্ড এবং ব্যক-এন্ড ডেভ্লপমেন্ট কি এবং কেন ? </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">সফটওয়্যার আরকিটেকচার প্যাটার্ন </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">এপ্লিকেশন সিকুরিটি বেস্ট প্রেকটিস </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
