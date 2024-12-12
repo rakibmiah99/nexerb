@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown-it Full Example</title>
+    <!-- Syntax highlighting CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>Markdown-it Full Example</h1>
+<textarea id="markdown-input" rows="10" style="width:100%;">
+# Markdown-it Demo
+## Features
+- **Tables** support
+- Syntax **highlighting** with `highlight.js`
+- Extended Markdown (GitHub-flavored Markdown)
+
+| Name      | Age | Country    |
+| --------- | --- | ---------- |
+| John Doe  | 30  | USA        |
+| Jane Doe  | 25  | Canada     |
+
+### Code Example
+```javascript
+function helloWorld() {
+  console.log("Hello, World!");
+}
+helloWorld();
+
+</textarea>
+
+<button id="render-button" style="margin-top:10px;">Render Markdown</button>
+<div id="markdown-output" style="margin-top:20px;"></div>
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>
+    // Initialize Markdown-it with plugins
+    const md = markdownit({
+            html: true, // Enable HTML tags in source
+            linkify: true, // Automatically link URLs
+            typographer: true, // Enable smart quotes, etc.
+        });
+    // Add syntax highlighting
+    md.renderer.rules.fence = function (tokens, idx, options, env, slf) {
+        const token = tokens[idx];
+        const code = token.content.trim();
+        const lang = token.info.trim();
+        if (hljs.getLanguage(lang)) {
+            return `<pre><code class="hljs ${lang}">${hljs.highlight(code, { language: lang }).value}</code></pre>`;
+        }
+        return `<pre><code>${md.utils.escapeHtml(code)}</code></pre>`;
+    };
+
+// Render Markdown on button click
+document.getElementById("render-button").addEventListener("click", () => {
+    const input = document.getElementById("markdown-input").value;
+    const output = md.render(input);
+    document.getElementById("markdown-output").innerHTML = output;
+    document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block); // Highlight code blocks
+    });
+});
+
+</script>
+</body>
+</html>

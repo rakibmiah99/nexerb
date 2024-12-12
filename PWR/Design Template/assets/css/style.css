@@ -3,7 +3,7 @@
 /*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");*/
 :root{
     --site-body-color: #F9F9FA;
-    --site-bg-primary-color: #4A0A8A;
+    --site-bg-primary-color: #6610f2;
     --site-bg-primary-color-hover: #230B66;
     --site-bg-secondary-color: #021526;
     --site-text-color-light: #FFFFFF;
@@ -106,8 +106,8 @@ body{
     font-size: 18px;
     font-weight: 500!important;
     color: var(--site-text-color-dark)!important;
-    text-underline-offset: 10px!important;
-    text-decoration-thickness: 3px!important;
+    text-underline-offset: 7px!important;
+    text-decoration-thickness: 2px!important;
 }
 
 .nav-link:hover{
@@ -139,7 +139,7 @@ body{
 }
 .course-info-icon-text div{
     margin-right: 10px;
-
+    font-size: 15px;
 }
 
 #footer{
@@ -159,15 +159,30 @@ body{
 }
 
 .course-details .course-topic-title{
-    padding: 10px 10px;
+    padding: 10px 15px;
     background-color: var(--site-bg-primary-color);
     color: var(--site-text-color-light);
     border-radius: 6px;
-    text-align: center;
+    font-size: 18px;
+    /*text-align: center;*/
 }
+
+.course-details .course-topics .nav-link{
+    display: flex;
+    border-bottom: 1px solid var(--site-border-color-light);
+}
+
+
+
+
+.course-details .course-topics .nav-link i{
+    padding-right: 10px;
+}
+
 .course-guide-line-links{
     border: 1px solid var(--site-border-color-light);
 }
+
 .course-details .course-topic-guideline-title{
     padding: 10px 10px;
     background-color: var(--site-bg-secondary-color);
